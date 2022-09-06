@@ -27,24 +27,6 @@
     Change configuration:
 			git config –global user.name “new name” // same for others
 
-    *** Some commands for file or directory ***
-    	cd .. // previous folder
-    	cd filename/ forderName  // specific file or forlder
-    	pwd // present directory
-    	mkdir // make directory/folder
-    	touch day1.txt // make file
-    	open day1.txt // open file
-    	notepad filename.extention // file create if have not,otherwise open in notepad
-
-    	ls // only visible file
-    	ls -a // all files ,with hidden
-	    	Version control possible from local repository ,Not from working
-	    	Directory or stagging area
-	
-		Mkdir // make directory
-		rm -rf test.txt	// remove/ delete a folder ////// rm =remove directory,rf=remove file
-    *********************************************
-
 
 ## Initialize:
 	git init
@@ -193,5 +175,61 @@
 	git branch -M main
 	git push -u origin main
 
-	**************************************************
-9.2.22
+	*****************************************************
+
+# Some commands for file or directory
+    	cd .. // previous folder
+    	cd filename/ forderName  // specific file or forlder
+    	pwd // present directory
+    	mkdir // make directory/folder
+    	touch day1.txt // make file
+    	open day1.txt // open file
+    	notepad filename.extention // file create if have not,otherwise open in notepad
+
+    	ls // only visible file
+    	ls -a // all files ,with hidden
+	    	Version control possible from local repository ,Not from working
+	    	Directory or stagging area
+	
+		Mkdir // make directory
+		rm -rf test.txt	// remove/ delete a folder ////// rm =remove directory,rf=remove file
+
+		Show the file system:
+			ls
+			ls -1 // one item per line
+			ls -l // one per line details
+	
+		Go back directory:
+			cd .. 		// one down
+			cd ../.. 	// two down and so on ..
+			cd ~		// root directory
+	
+		Go to target directory:
+			cd /dir
+			cd fileName
+
+		Rename/move dirctory:
+			mv test docker		// test tot docker
+
+		Create file:
+			touch fileName	// one file
+			touch fil1 file2 file3	// multiple file
+
+		Remove file:
+			rm fileName	// one file
+			rm file*	// file start with file like file1,file2,file3
+		
+		Remove directory:
+			rm -r dir/	// here -r for recursively
+
+		See documents of a file:
+			cat filename
+
+		Transfer file documents to another file:
+			cat file1.txt > file2.txt	// document transfer to file2 from file1
+
+
+
+    *****************************************************
+
+6.9.22
