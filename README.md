@@ -231,5 +231,13 @@
 
 
     *****************************************************
+ 
+## What should we do to work in a team?
+	
+    git checkout master			// move to master
+    git pull				// pull from master
+    git checkout -b newBranch		// create new branch
+    git push origin newBranch		// push to new branch
+    
 
 6.9.22
