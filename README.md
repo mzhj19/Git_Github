@@ -155,8 +155,9 @@
     mkdir .ssh	// if not have .ssh
     cd .ssh
     pwd
-    ssh-keygen -t rsa -C "zahid@usoz.com"
-    mate id_rsa.pub
+    ssh-keygen -t rsa -C "zahid@usoz.com"	// generate ssh key
+    ls -list	// show the list
+    mate id_rsa.pub	// open id_rsa.pub , windows user can use notepad id_rsa.pub
     ssh -T git@github.com	// connect github over ssh protocol.
 
 
