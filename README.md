@@ -148,6 +148,34 @@
 ## Show branch:
 	git branch
 
+## merge:
+	git merge bugFix	// now on main, it will merge with bugFix
+
+
+## rebase:
+	git rebase main		// now on bugFix, this will rebase with main
+	
+
+## ^ , ~ operator:
+	git checkout main^	// now on main, ^ will goes to immediate parent
+	git checkout main~2	// ~2 will goes to parent of parent
+	git branch -f main HEAD~3	// moves (by force) the main branch to three parents behind HEAD
+	git branch -f main HEAD		// main will goes to head, checkout means to head
+	
+## reset:
+			// git reset is used to move the HEAD pointer and update the current branch to a specific commit, effectively discarding or deleting commits
+				
+	git reset HEAD~1 	// will move a branch backwards as if the commit had never been made
+	
+## revert:
+			// git revert is used to create a new commit that undoes the changes made in a previous commit
+	git revert HEAD 	// do a new commit with undo previous commit/changes
+	
+## Show branch:
+	git cherry-pick c2 c4		// now on main, this will copy all from commit c2-c4 to the main
+	git cherry-pick c4 		// now on main, this will copy everything of c4 to main
+	
+
 ## SSH Authentication Commands:
 	
     cd ~    // for root  user directory , exmple: /c/Users/JAMIL
